@@ -14,9 +14,14 @@ BACKUP=.backup
 ###############################################################################
 # Top-level targets
 ###############################################################################
-.PHONY : all vim
+.PHONY : all vim install
 
-all: vim
+all:
+	@echo "You probably don't want to use this Makefile since it will"
+	@echo "replace your configuration with the one stored in this repository."
+	@echo "If you're absolutely sure, run 'make install'"
+
+install: vim
 
 vim: ${CONFIG}/.vimrc
 	${CP} ${HOME}/.vimrc ${HOME}/.vimrc${BACKUP}
