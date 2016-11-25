@@ -1,3 +1,5 @@
 # Global options
 --recurse=yes
---tag-relative
+--tag-relative=yes
+--exclude=.git
+--exclude=build
