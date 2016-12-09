@@ -41,6 +41,13 @@ set backspace=eol,start
 " Enable syntax-related configurations
 syntax on
 
+"-------------------------------------------------------------------------------
+" GUI-specific options
+"-------------------------------------------------------------------------------
+if has("gui_running")
+	set lines=40 columns=95
+endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colourscheme
 " Allow full 256 colours in terminal.
