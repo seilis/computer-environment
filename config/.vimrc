@@ -30,7 +30,7 @@ let maplocalleader = "\\"
 set history=1024
 
 " Allow for file type-specific behaviour.
-filetype plugin on
+filetype plugin indent on
 
 " Set a central backup directory (prevents *.swp files from going everywhere).
 set backupdir=~/.vim/backup/,/tmp
@@ -47,6 +47,12 @@ syntax on
 if has("gui_running")
 	set lines=40 columns=95
 endif
+
+"-------------------------------------------------------------------------------
+" Indentation
+"-------------------------------------------------------------------------------
+set shiftwidth=4
+set softtabstop=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colourscheme
