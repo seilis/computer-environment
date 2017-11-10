@@ -13,6 +13,8 @@ alias pac='sudo pacman'
 alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -l'
+alias view='evince'
+alias img='geeqie'
 
 
 # Prompt
