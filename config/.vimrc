@@ -1,7 +1,7 @@
 "------------------------------------------------------------------------------
 " File: .vimrc
 " Author: Aaron Seilis <Aaron.Seilis@seilis.ca>
-" License: Copyright (c) 2016 Aaron Seilis. Please see LICENSE for details.
+" License: Copyright (c) 2016-2017 Aaron Seilis. Please see LICENSE for details.
 "------------------------------------------------------------------------------
 
 "------------------------------------------------------------------------------
@@ -41,18 +41,29 @@ set backspace=eol,start
 " Enable syntax-related configurations
 syntax on
 
+set backspace=indent,eol,start
+
 "-------------------------------------------------------------------------------
 " GUI-specific options
 "-------------------------------------------------------------------------------
 if has("gui_running")
 	set lines=40 columns=95
+	set guioptions-=T
 endif
 
 "-------------------------------------------------------------------------------
 " Indentation
 "-------------------------------------------------------------------------------
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
+"-------------------------------------------------------------------------------
+" Visual editing
+"-------------------------------------------------------------------------------
+set relativenumber
+set number
+set hlsearch
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colourscheme
