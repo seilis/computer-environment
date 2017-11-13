@@ -54,6 +54,8 @@ endif
 "-------------------------------------------------------------------------------
 " Indentation
 "-------------------------------------------------------------------------------
+" I'm a tab=4-spaces kind of guy. Since I program in Python a lot, this
+" matches with recommendations from PEP-8.
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -65,10 +67,22 @@ set relativenumber
 set number
 set hlsearch
 
+"-------------------------------------------------------------------------------
+" Visual editing
+"-------------------------------------------------------------------------------
+" Generally, I edit code so I don't want wrapping enabled by default. However,
+" some plain-text-like formats look better with wrapping.
+set nowrap
+augroup wrapping
+	autocmd!
+	autocmd FileType plaintex set wrap
+	autocmd FileType text set wrap
+	autocmd FileType markdown set wrap
+augroup END
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Colourscheme
 " Allow full 256 colours in terminal.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
 colorscheme solarized
-
