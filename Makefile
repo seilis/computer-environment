@@ -4,6 +4,7 @@
 
 # Tools to use
 CP?=cp
+MKDIR?=mkdir
 
 ###############################################################################
 # Project variables
@@ -21,7 +22,7 @@ all:
 	@echo "replace your configuration with the one stored in this repository."
 	@echo "If you're absolutely sure, run 'make install'"
 
-install: vim zsh
+install: vim zsh beets
 
 vim: ${CONFIG}/.vimrc
 	${CP} ${HOME}/.vimrc ${HOME}/.vimrc${BACKUP}
@@ -30,3 +31,9 @@ vim: ${CONFIG}/.vimrc
 zsh: ${CONFIG}/.zshrc
 	${CP} ${HOME}/.zshrc ${HOME}/.zshrc${BACKUP}
 	${CP} ${CONFIG}/.zshrc ${HOME}/.zshrc
+
+beets: ${CONFIG}/.config/beets/config.yaml
+	${MKDIR} -p ${HOME}/.config/beets
+	${CP} ${HOME}/.config/beets/config.yaml ${HOME}/.config/beets/config.yaml${BACKUP}
+	${CP} ${CONFIG}/.config/beets/config.yaml ${HOME}/.config/beets/config.yaml
+
