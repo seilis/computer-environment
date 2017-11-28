@@ -35,13 +35,16 @@ filetype plugin indent on
 " Set a central backup directory (prevents *.swp files from going everywhere).
 set backupdir=~/.vim/backup/,/tmp
 
-" Delete key behavior
-set backspace=eol,start
+" Delete key behaviour
+set backspace=indent,eol,start
 
 " Enable syntax-related configurations
 syntax on
 
-set backspace=indent,eol,start
+"-------------------------------------------------------------------------------
+" Spell checking
+"-------------------------------------------------------------------------------
+set spell spelllang=en_ca
 
 "-------------------------------------------------------------------------------
 " GUI-specific options
@@ -59,6 +62,20 @@ endif
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+augroup tabwidth
+	autocmd!
+	" YANG seems to be customarially written with indentation of 2.
+	autocmd FileType yang set tabstop=2 shiftwidth=2 softtabstop=2
+augroup END
+
+" Pretty much always expand tabs
+set expandtab
+augroup expandtab
+	autocmd!
+	" It's a syntax error to expand tabs in Makefiles
+	autocmd FileType make set noexpandtab
+augroup END
+
 
 "-------------------------------------------------------------------------------
 " Visual editing
