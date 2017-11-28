@@ -12,4 +12,7 @@ don't recommend this unless you happen to know that you want all of your
 configuration replaced with mine.
 
 ## Contents
+* abcde - [.abcde.conf](config/.vimrc)
+* beets - [config.yaml](config/.config/beets/config.yaml)
 * gVIM - [.vimrc](config/.vimrc)
+* Zsh - [.zshrc](config/.zshrc)
