@@ -1,7 +1,7 @@
 "------------------------------------------------------------------------------
 " File: .vimrc
 " Author: Aaron Seilis <Aaron.Seilis@seilis.ca>
-" License: Copyright (c) 2016-2017 Aaron Seilis. Please see LICENSE for details.
+" License: Copyright (c) 2016-2018 Aaron Seilis. Please see LICENSE for details.
 "------------------------------------------------------------------------------
 
 "------------------------------------------------------------------------------

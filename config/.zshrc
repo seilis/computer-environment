@@ -15,6 +15,7 @@ alias la='ls -a'
 alias ll='ls -l'
 alias view='evince'
 alias img='geeqie'
+alias gkv='gitk --all'
 
 
 # Prompt
