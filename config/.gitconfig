@@ -1,0 +1,7 @@
+[user]
+	name = Aaron Seilis
+	email = aaron.seilis@seilis.ca
+[core]
+	editor = gvim -f
+[alias]
+	fall = fetch --all
