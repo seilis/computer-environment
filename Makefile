@@ -36,4 +36,3 @@ beets: ${CONFIG}/.config/beets/config.yaml
 	${MKDIR} -p ${HOME}/.config/beets
 	${CP} ${HOME}/.config/beets/config.yaml ${HOME}/.config/beets/config.yaml${BACKUP}
 	${CP} ${CONFIG}/.config/beets/config.yaml ${HOME}/.config/beets/config.yaml
-
