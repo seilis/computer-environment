@@ -41,6 +41,14 @@ set backspace=indent,eol,start
 " Enable syntax-related configurations
 syntax on
 
+" Always remove trailing whitespace. In theory, this might mess up some file
+" where trailing whitespace is important... but I'm not aware of a concrete
+" example.
+augroup whitespace
+    autocmd!
+    autocmd BufWritePre * %s/\s\+$//e
+augroup END
+
 "-------------------------------------------------------------------------------
 " Spell checking
 "-------------------------------------------------------------------------------
