@@ -1,7 +1,7 @@
 [user]
-	name = Aaron Seilis
-	email = aaron.seilis@seilis.ca
+    name = Aaron Seilis
+    email = aaron.seilis@seilis.ca
 [core]
-	editor = gvim -f
+    editor = gvim -f
 [alias]
-	fall = fetch --all
+    fall = fetch --all

@@ -58,8 +58,8 @@ set spell spelllang=en_ca
 " GUI-specific options
 "-------------------------------------------------------------------------------
 if has("gui_running")
-	set lines=40 columns=95
-	set guioptions-=T
+    set lines=40 columns=95
+    set guioptions-=T
 endif
 
 "-------------------------------------------------------------------------------
@@ -71,17 +71,17 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 augroup tabwidth
-	autocmd!
-	" YANG seems to be customarially written with indentation of 2.
-	autocmd FileType yang set tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd!
+    " YANG seems to be customarily written with indentation of 2.
+    autocmd FileType yang set tabstop=2 shiftwidth=2 softtabstop=2
 augroup END
 
 " Pretty much always expand tabs
 set expandtab
 augroup expandtab
-	autocmd!
-	" It's a syntax error to expand tabs in Makefiles
-	autocmd FileType make set noexpandtab
+    autocmd!
+    " It's a syntax error to expand tabs in Makefiles
+    autocmd FileType make set noexpandtab
 augroup END
 
 
@@ -99,10 +99,10 @@ set hlsearch
 " some plain-text-like formats look better with wrapping.
 set nowrap
 augroup wrapping
-	autocmd!
-	autocmd FileType plaintex set wrap
-	autocmd FileType text set wrap
-	autocmd FileType markdown set wrap
+    autocmd!
+    autocmd FileType plaintex set wrap
+    autocmd FileType text set wrap
+    autocmd FileType markdown set wrap
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
