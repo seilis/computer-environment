@@ -2,6 +2,15 @@
     name = Aaron Seilis
     email = aaron.seilis@seilis.ca
 [core]
-    editor = gvim -f
+	editor = gvim -f
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+	log = auto
 [alias]
-    fall = fetch --all
+	fall = fetch --all
+	graph = log --all --graph --format=\"%h %C(auto,yellow)%aN %C(auto,cyan)%aI %C(auto,green)%d   %C(auto,white)%s\"
