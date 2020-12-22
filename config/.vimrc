@@ -110,4 +110,4 @@ augroup END
 " Allow full 256 colours in terminal.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set t_Co=256
-colorscheme solarized
+colorscheme gruvbox
