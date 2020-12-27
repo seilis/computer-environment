@@ -103,6 +103,7 @@ augroup wrapping
     autocmd FileType plaintex set wrap
     autocmd FileType text set wrap
     autocmd FileType markdown set wrap
+    autocmd FileType tex set wrap
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
