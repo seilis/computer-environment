@@ -1,23 +1,24 @@
-directory: ~/Music
-library: ~/.config/beets/library.db
 import:
-    move: yes
-    write: yes
-    languages: ['en', 'fr']
-
-plugins: chroma convert fetchart embedart badfiles
-
+  write: yes
+  move: yes
+    #plugins: convert chroma embedart fetchart lyrics thumbnails
+plugins: convert chroma embedart fetchart thumbnails
 convert:
-    auto: no
-    copy_album_art: yes
-    dest: ~/beet-music-converted
-    never_convert_lossy_files: yes
-    format: opus
-    formats:
-        opus: 
-            command: opusenc $source $dest
-            extension: ogg
+  dest: ~/Music-Converted
+  format: opus
+  auto: no
+  copy_album_art: yes
+  never_convert_lossy_files: yes
+
+fetchart:
+  auto: yes
+  sources: filesystem coverart itunes amazon albumart wikipedia
 
 embedart:
-    auto: yes
+  auto: yes
 
+lyrics:
+  auto: yes
+
+thumbnails:
+  auto: yes
