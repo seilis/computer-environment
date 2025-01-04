@@ -13,4 +13,4 @@
 	log = auto
 [alias]
 	fall = fetch --all
-	graph = log --all --graph --format=\"%h %C(auto,yellow)%aN %C(auto,cyan)%aI %C(auto,green)%d   %C(auto,white)%s\"
+	graph = log --all --graph --format=\"%<|(15)%h %C(auto,cyan)%as %C(auto,yellow)%aN %C(auto,green) %(decorate:pointer=→,separator= ) %C(auto,white)%s%Creset\"
